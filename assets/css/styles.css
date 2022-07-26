@@ -29,6 +29,12 @@ body {
   line-height: 1.7;
 }
 
+h1, h2, h3,h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    color: var(--c-dark);
+}
+
 a {
   text-decoration: none;
   color: var(--c-brand);
@@ -72,7 +78,7 @@ img {
 
 /*
 * =================
-*  BUTTONs
+*  BUTTONS
 * =================
 */
 
@@ -94,4 +100,17 @@ img {
   background-color: var(--c-brand-light);
   border-color: var(--c-brand-light);
   color: #fff;
+}
+
+/*
+* =================
+*   Home
+* =================
+*/
+#home {
+  background: linear-gradient(
+      rgba(var(--c-brand-rgb), 0.507),
+      rgba(var(--c-brand-rgb), 0.438)
+    ),
+    url("../img/hero-1.jpg") center center / cover;
 }
