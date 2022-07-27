@@ -29,10 +29,20 @@ body {
   line-height: 1.7;
 }
 
-h1, h2, h3,h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-    font-weight: 600;
-    color: var(--c-dark);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 600;
+  color: var(--c-dark);
 }
 
 a {
@@ -54,10 +64,44 @@ img {
   height: auto;
 }
 
-.section-padding {
+/* 
+* ===================
+*  Reuseable classes
+* ===================
+*/
+.section {
   padding-block: 8.5rem;
 }
 
+.section__title {
+  text-align: center;
+}
+
+.section__title-underline {
+  width: 60px;
+  height: 4px;
+  background-color: var(--c-brand);
+  margin: 1rem auto 1.5rem auto;
+}
+.section__subtitle {
+  max-width: 500px;
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 4rem;
+}
+
+.iconbox {
+  display: inline-flex;
+  width: 70px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(var(--c-brand-rgb), 0.1);
+  color: var(--c-brand);
+  font-size: 2rem;
+  flex: none;
+  margin-right: 1.5rem;
+}
 /*
 * =================
 *   NAVBAR & NAV
@@ -81,7 +125,6 @@ img {
 *  BUTTONS
 * =================
 */
-
 .btn {
   font-weight: 600;
   font-size: 1rem;
@@ -104,7 +147,7 @@ img {
 
 /*
 * =================
-*   Home
+*      Home
 * =================
 */
 #home {
